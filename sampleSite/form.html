@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SampleSite|問合せ</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>俺のラーメン<span>北堀江本店</span></h1>
+        <ul class="nav">
+            <li><a href="index.html#news">新着情報</a></li>
+            <li><a href="index.html#menu">こだわりメニュー</a></li>
+            <li><a href="form.html">問合せ</a></li>
+            <li><a href="#">採用</a></li>
+        </ul>
+    </header>
+    <main>
+        <article id="contact">
+            <h2>問合せメールフォーム</h2>
+            <form action="#" method="post" name="contactForm">
+            <table id="formTable">
+                <tr>
+                    <th>名前</th>
+                    <td>
+                        <input type="text" name="name" id="name">
+                        <span id="noName"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>メール</th>
+                    <td>
+                        <input type="email" name="eMail01" id="eMail01">
+                        <span id="noMail01"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>メール(確認)</th>
+                    <td>
+                        <input type="email" name="eMail02" id="eMail02">
+                        <span id="noMail02"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>内容</th>
+                    <td>
+                        <textarea name="str" id="textArea" cols="50" rows="10" maxlength="501">
+                        </textarea>
+                        <span id="noTextArea"></span>
+                    </td>
+                </tr>
+            </table>
+                <input type="submit" value="次へ" onClick="return check()">
+            </form>
+
+        </article>
+
+        <article id="menu">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section class="footerUp">
+            <ul class="f_nav">
+                <li><a href="index.html#news">新着情報</a></li>
+                <li><a href="index.html#menu">こだわりメニュー</a></li>
+                <li><a href="#">問合せ</a></li>
+                <li><a href="#">採用</a></li>
+            </ul>
+            <p class="footerLogo">俺のラーメン</p>
+        </section>
+        <section class="footerLow">
+            <p>
+                <small>Copyright &copy; 2022 俺のラーメン株式会社 All Rights Reserved.</small>
+            </p>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="js/check.js"></script>
+</body>
+</html>
